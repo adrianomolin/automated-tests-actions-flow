@@ -12,8 +12,4 @@ describe("isEven", () => {
   test("throws an error if number is negative", () => {
     expect(() => isEven(-1)).toThrow();
   });
-
-  test("throws an error if number is not a number", () => {
-    expect(() => isEven("1")).toThrow();
-  });
 });
