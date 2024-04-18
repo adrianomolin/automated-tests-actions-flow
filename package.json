@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
-    "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'"
+    "test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
