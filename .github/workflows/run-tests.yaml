@@ -2,15 +2,15 @@ name: CI
 run-name: Run Playback-Lib automated tests
 on: [push, pull_request]
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Install modules
         uses: actions/setup-node@v1
         with: 
           node-version: '18'
-        - run: yarn install
+      - run: yarn install
       - name: Run tests
         - run: yarn test
 
