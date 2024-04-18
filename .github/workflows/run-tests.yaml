@@ -11,8 +11,7 @@ jobs:
         with: 
           node-version: '18'
       - run: yarn install
-      - name: Run tests
-        - run: yarn test
+      - run: yarn test
 
       - name: Tests ✅
         if: ${{ success() }}
